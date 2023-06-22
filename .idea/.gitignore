@@ -3,3 +3,7 @@
 /workspace.xml
 /secrets/credentials.py
 /watcher/datastore/moderators.sqlite
+*/__pycache__/
+__pycache__
+__pycache__/*
+*/*/__pycache__/

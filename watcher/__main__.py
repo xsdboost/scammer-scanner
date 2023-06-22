@@ -3,7 +3,7 @@ import discord
 from discord import Guild
 from pony.orm import db_session, select
 
-from secrets.credentials import bot_key
+from secrets.credentials import bot_key, guild_id, channel_id
 from watcher.domain.usecases import members_in_admin_list
 from watcher.orm.models import db, DiscordUser
 from discord.ext import commands, tasks
@@ -12,8 +12,6 @@ intents = discord.Intents.default()
 intents.message_content = True
 intents.members = True
 
-guild_id: int = 999513287962148924
-channel_id: int = 1000170281245093978
 
 client = discord.Client(intents=intents)
 bot = commands.Bot(command_prefix="/", client=client, intents=intents)
