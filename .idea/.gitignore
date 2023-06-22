@@ -1,0 +1,5 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/secrets/credentials.py
+/watcher/datastore/moderators.sqlite
