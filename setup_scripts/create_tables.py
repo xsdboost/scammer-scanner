@@ -1,6 +1,8 @@
 from pathlib import Path
+
 from pony.orm import db_session
-from watcher.orm.models import db, DiscordUser
+
+from watcher.orm.models import DiscordUser, db
 
 database_file = "../watcher/datastore/moderators.sqlite"
 file_ptr = Path(database_file)
@@ -13,7 +15,7 @@ db.generate_mapping(create_tables=True)
 
 with db_session:
     user = DiscordUser(
-        discord_id="709177976968970351", display_name="namo ebur", name="jako_mako"
+        discord_id="709177976968970344", display_name="namo ebur", name="jako_mako"
     )
 
     user = DiscordUser(
