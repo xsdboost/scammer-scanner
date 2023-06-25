@@ -1,8 +1,8 @@
 from typing import List
 from pony.orm import db_session, select
 
-from utils.admin import AdminCheck, MemberCheck
-from utils.modals import EmbedMessages
+from watcher.utils.admin import AdminCheck, MemberCheck
+from watcher.utils.modals import EmbedMessages
 from watcher.orm.models import DiscordUser
 
 

@@ -1,4 +1,4 @@
-from secrets.credentials import bot_key, channel_id, guild_id
+from watcher.secrets.credentials import bot_key, channel_id, guild_id
 
 import discord
 from discord.ext import commands, tasks
@@ -14,7 +14,7 @@ intents.members = True
 client = discord.Client(intents=intents)
 bot = commands.Bot(command_prefix="/", client=client, intents=intents)
 
-db.bind(provider="sqlite", filename="datastore/moderators.sqlite", create_db=True)
+db.bind(provider="sqlite", filename="./datastore/moderators.sqlite", create_db=True)
 db.generate_mapping(create_tables=True)
 
 
