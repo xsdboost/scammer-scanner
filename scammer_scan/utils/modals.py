@@ -3,7 +3,7 @@ from typing import Tuple
 import discord
 from discord import Member
 
-from watcher.orm.models import DiscordUser
+from scammer_scan.orm.models import DiscordUser
 
 
 def EmbedMessages(offender: Tuple[Member, DiscordUser]) -> discord.Embed:

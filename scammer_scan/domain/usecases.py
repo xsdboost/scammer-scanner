@@ -1,9 +1,9 @@
 from typing import List
 from pony.orm import db_session, select
 
-from watcher.utils.admin import AdminCheck, MemberCheck
-from watcher.utils.modals import EmbedMessages
-from watcher.orm.models import DiscordUser
+from scammer_scan.utils.admin import AdminCheck, MemberCheck
+from scammer_scan.utils.modals import EmbedMessages
+from scammer_scan.orm.models import DiscordUser
 
 
 @db_session

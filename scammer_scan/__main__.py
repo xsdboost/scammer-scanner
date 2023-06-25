@@ -3,8 +3,8 @@ from watcher.secrets.credentials import bot_key, channel_id, guild_id
 import discord
 from discord.ext import commands, tasks
 
-from watcher.domain import usecases
-from watcher.orm.models import db
+from scammer_scan.domain import usecases
+from scammer_scan.orm.models import db
 
 intents = discord.Intents.default()
 intents.message_content = True

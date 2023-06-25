@@ -4,7 +4,7 @@ from typing import List, Tuple, Sequence, Type
 import pytz
 from discord import Member
 
-from watcher.orm.models import DiscordUser
+from scammer_scan.orm.models import DiscordUser
 
 
 class MemberCheck:
