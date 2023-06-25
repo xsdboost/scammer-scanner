@@ -4,7 +4,7 @@ from pony.orm import db_session
 
 from watcher.orm.models import DiscordUser, db
 
-database_file = "../watcher/datastore/moderators.sqlite"
+database_file = "../scammer_scan/datastore/moderators.sqlite"
 file_ptr = Path(database_file)
 
 if file_ptr.is_file():
